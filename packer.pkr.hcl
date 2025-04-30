@@ -22,7 +22,6 @@ source "amazon-ebs" "debian" {
   ami_name        = "cis-hardened-debian12-amd64-{{timestamp}}"
   instance_type   = "t3.micro"
   region          = var.region
-  architecture    = "x86_64"
   ssh_username    = "admin"
 
   source_ami_filter {
