@@ -1,0 +1,6 @@
+- name: Harden Debian 12 with CIS Benchmark
+  hosts: all
+  become: yes
+  roles:
+    - DEBIAN12-CIS
+
