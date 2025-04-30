@@ -1,6 +1,19 @@
 - name: Harden Debian 12 with CIS Benchmark
   hosts: all
   become: yes
+
+  vars:
+    setup_audit: true
+    run_audit: true
+    audit_run_heavy_tests: true
+    deb12cis_sshd:
+      allow_users: "admin"
+      allow_groups: "admin"
+      client_alive_interval: 900
+    deb12cis_ufw_allow_out_ports:
+      - 53
+      - 80
+      - 443
+
   roles:
     - DEBIAN12-CIS
-
