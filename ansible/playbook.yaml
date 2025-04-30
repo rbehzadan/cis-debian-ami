@@ -6,6 +6,9 @@
     setup_audit: true
     run_audit: true
     audit_run_heavy_tests: true
+    deb12cis_rule_5_2_4: false   # true: Ensure users must provide password for escalation
+    deb12cis_rule_5_4_1_1: false # true: Ensure password expiration is configured
+    deb12cis_rule_5_4_2_4: false # true: Ensure root password is set
     deb12cis_sshd:
       allow_users: "admin"
       allow_groups: "admin"
