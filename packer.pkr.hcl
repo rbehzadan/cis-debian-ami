@@ -5,6 +5,12 @@ packer {
       source  = "github.com/hashicorp/amazon"
     }
   }
+  required_plugins {
+    ansible = {
+      version = "~> 1"
+      source = "github.com/hashicorp/ansible"
+    }
+  }
 }
 
 variable "region" {
