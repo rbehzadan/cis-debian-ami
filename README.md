@@ -38,7 +38,7 @@ cis-debian-ami/
 ### 1. Clone the repository
 
 ```bash
-git clone --recurse-submodules https://github.com/your-username/cis-debian-ami.git
+git clone --recurse-submodules https://github.com/rbehzadan/cis-debian-ami.git
 cd cis-debian-ami
 ````
 
